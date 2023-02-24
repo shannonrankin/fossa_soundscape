@@ -1,0 +1,63 @@
+# Biotic, Abiotic, and Anthropogenic Contributors to Soundscapes: Development of an Open-Source Method for Data Integration & Visualization
+
+*Investigators:*\
+Shannon Rankin, Southwest Fisheries Science Center, La Jolla, CA 92037\
+Taiki Sakai, Contractor with Ocean Associates for SWFSC, La Jolla, CA 92037\
+Anne Simonis, Contractor with Ocean Associates for SWFSC, La Jolla, CA 92037 Megan McKenna, \[*insert affiliation*\]
+
+# Background
+
+\
+
+# Research Objectives
+
+Develop open source software methods to (1) integrate soundscape data products with acoustic detection of cetaceans in PAMpal open source software, (2) integrate ship track information provided by AIS, VMS, and/or vessel GPS tracks, and (3) integrate weather metrics provided by NOAA National Data Buoy Center/ERDDAP, (4) provide data export (for downstream processing), summaries and visualizations. These products will allow NOAA scientists to estimate the contribution of biotic, abiotic, and anthropogenic contributors to the ocean soundscape in a reproducible manner that facilitates comparisons across temporal and geographic scales.
+
+Specific Deliverables: 1. Identify Needs. Conduct a literature review and a survey of NOAA scientists to inform development and 'best practices'.\
+2. Integrate Soundscape Metrics into FOSSA. Develop function (or independent software package) to integrate soundscape metrics from SanctSound, ADEON, and Pamguard into PAMpal. 3. Integrate Ship Tracks into FOSSA. Provide function(s) to integrate AIS (https://marinecadastre.gov/ais), VMS (TBD), and vessel GPS track into FOSSA. Functions will have options for automated integration from preferred data portals with API, and/or allow for ingest of CSV files.\
+4. Integrate Weather Metrics into FOSSA. Provide function(s) to integrate measures of wind and rain (NOAA National Data Buoy Center, ERDDAP) into FOSSA. Functions will have options for automated integration from preferred data portals with API, and/or allow for ingest of CSV files.\
+5. Merge Soundscape Metrics with Acoustic Events. Create functions to match soundscape metrics to acoustic events within PAMpal Acoustic Studies.\
+6. Create Data Summaries and Visualizations. Create visualizations and summaries to show potential impact of sound on marine mammals (based 'best practices' identified during Task 1).\
+7. Publish open source (CRAN) and create tutorials.
+
+# Results
+
+## Integrate Soundscape Metrics into FOSSA
+
+\[Literature Review to identify 'best practices'\]
+
+\[How to integrate soundscape metrics into FOSSA. Include links to functions on CRAN and tutorials\]
+
+\[How to merge soundscape metrics w/ acoustic events in PAMpal. Include links to functions on CRAN and tutorials\]
+
+## Integrate Shiptracks into FOSSA
+
+\[Briefly discuss options for AIS, pros/cons\]
+
+\[Discuss the options we will accommodate\]
+
+\[How to Integrate ShipTracks into FOSSA. Include links to functions on CRAN and tutorials\]
+
+## Integrate Weather into FOSSA
+
+\[Discuss the options we will accommodate\]
+
+\[How to Integrate weather into FOSSA. Include links to functions on CRAN and tutorials\]
+
+## Create Data Summaries & Visualizations
+
+\[Summarize how systematic workflow pipeline allows for easy creation of standardized data products\]
+
+\[Briefly discuss the options we've integrated thusfar. Include links to functions on CRAN and tutorials\]
+
+\[Discuss how this can be easily expanded in the future\]
+
+## Open Source Deliverables
+
+\[List all open source deliverables, provide links\]
+
+## Conclusions and Future Directions
+
+\[Summarize the good/bad/ugly\]
+
+\[Suggest some future directions\]
