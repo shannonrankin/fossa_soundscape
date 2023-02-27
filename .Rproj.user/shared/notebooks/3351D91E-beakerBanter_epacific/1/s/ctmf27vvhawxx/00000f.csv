@@ -1,0 +1,23 @@
+"0","#data <-addGps(data)"
+"0","    #We have problems, need to fix them, in the interim I can do this:"
+"0","    addGps(data)"
+"2","Warning: 39 events had GPS matches exceeding the time threshold, use ""getWarnings(x)"" for details."
+"1","AcousticStudy object named "
+"1",""
+"1","epacific_bw"
+"1",""
+"1"," with "
+"1",""
+"1","3214"
+"1",""
+"1"," AcousticEvents.
+"
+"1","And "
+"1",""
+"1","1"
+"1",""
+"1"," notes:
+"
+"1",""
+"1","studyNotes:
+  There were 2 warnings during processing, use ""getWarnings(x)"" to see t..."
