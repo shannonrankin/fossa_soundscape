@@ -1,0 +1,5 @@
+"0","data <- setSpecies(data, method='reassign',
+                   value=data.frame(old=c('ZC', 'MS', 'BB', 'BWC'), new=c(""Cuviers"", ""Stejnegers"", ""Bairds"", ""CrossSeamount"")))
+"
+"2","4 species (possBW, BW, BW37V, BW43) were not in reassignment dataframe, they have not been changed.
+"

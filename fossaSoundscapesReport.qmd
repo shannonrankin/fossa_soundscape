@@ -7,18 +7,27 @@ Anne Simonis, Contractor with Ocean Associates for SWFSC, La Jolla, CA 92037 Meg
 
 # Background
 
-\
+There is increased awareness that the ocean soundscape provides valuable insight into the health of the marine environment, and the increase in passive acoustic monitoring provides expanded opportunities to integrate soundscape analysis into existing or emerging studies. With increased consideration of sustainable development related to offshore renewable energy, it is important that NOAA provides data products in a transparent and reproducible manner.
+
+There are a number of analytical approaches to assessing the marine soundscape and there is ongoing effort to standardize these efforts. The National Center for Environmental Information (NCEI) hosts a growing archive of soundscape metrics, and while this data is freely available, scientists need tools to aggregate this data and integrate with other data products to provide context for studies for acoustic ecology (#fig-miksis, from Miksis-Olds, et al. 2018).
+
+[![Soundscape presented within the context of acoustic ecology. Green boxes and arrows, natural factors: behavioral ecology, acoustic behavior, and abiotic and biotic factors contributing to (outgoing arrows) or impacted by (incoming arrows) the soundscape (blue box and arrows); red box and arrows, interactions and influences of human activity related to or impacting the soundscape. From Miksis-Olds et al. 2018 (Figure 2), adapted from van Opzeeland and Miksis-Olds (2012, Figure 1).](figures/Miksis-Olds_Fig2_AcousticsToday_2018.PNG){#fig-miksis fig-align="center"}](https://acousticstoday.org/wp-content/uploads/2018/03/Exploring-the-Ocean-Through-Soundscapes.pdf)
+
+Southwest Fisheries Science Center has developed FOSSA (Free and Open Source Software for Acoustics), a series of interconnected software packages for systematic and efficient processing of passive acoustic data for cetacean population assessment. Currently FOSSA consists of three software packages written in R programming language and published on CRAN:PAMpal (cite), BANTER (cite), and PAMmisc (cite). PAMpal serves to extract acoustic data analyzed in PAMguard open source software (pamguard.org), provide measures of acoustic data, integrate acoustic detections with environmental data products (ERDAPP, cite), and prepare data for downstream processing. The structured format of PAMpal provides a platform for integrating detection of marine mammal events with alternative data products, such as soundscape metrics, in an easy to use package that encourages replication of results and comparison of results from different studies to provide improved geographic and temporal analyses.
+
+This report outlines the expansion of the FOSSA framework to integrate soundscape data products and merge these metrics into acoustic datasets within PAMpal. We will also develop a function to integrate ship track information (via AIS/VMS) and wind/rain metrics (via weather buoys or remote sensors) into the PAMpal acoustic study. This work provides user friendly functions to create data summaries and visualizations to accommodate a range of spatial and temporal scales. These functionalities and tutorials will be published on CRAN, allowing for adoptions across NOAA science centers and the global acoustics community.
 
 # Research Objectives
 
-Develop open source software methods to (1) integrate soundscape data products with acoustic detection of cetaceans in PAMpal open source software, (2) integrate ship track information provided by AIS, VMS, and/or vessel GPS tracks, and (3) integrate weather metrics provided by NOAA National Data Buoy Center/ERDDAP, (4) provide data export (for downstream processing), summaries and visualizations. These products will allow NOAA scientists to estimate the contribution of biotic, abiotic, and anthropogenic contributors to the ocean soundscape in a reproducible manner that facilitates comparisons across temporal and geographic scales.
+Expand FOSSA by integrating data representing various contributors to the marine soundscape, including:
 
-Specific Deliverables: 1. Identify Needs. Conduct a literature review and a survey of NOAA scientists to inform development and 'best practices'.\
-2. Integrate Soundscape Metrics into FOSSA. Develop function (or independent software package) to integrate soundscape metrics from SanctSound, ADEON, and Pamguard into PAMpal. 3. Integrate Ship Tracks into FOSSA. Provide function(s) to integrate AIS (https://marinecadastre.gov/ais), VMS (TBD), and vessel GPS track into FOSSA. Functions will have options for automated integration from preferred data portals with API, and/or allow for ingest of CSV files.\
-4. Integrate Weather Metrics into FOSSA. Provide function(s) to integrate measures of wind and rain (NOAA National Data Buoy Center, ERDDAP) into FOSSA. Functions will have options for automated integration from preferred data portals with API, and/or allow for ingest of CSV files.\
-5. Merge Soundscape Metrics with Acoustic Events. Create functions to match soundscape metrics to acoustic events within PAMpal Acoustic Studies.\
-6. Create Data Summaries and Visualizations. Create visualizations and summaries to show potential impact of sound on marine mammals (based 'best practices' identified during Task 1).\
-7. Publish open source (CRAN) and create tutorials.
+1.  Soundscape data products,
+
+2.  AIS ship tracks,
+
+3.  Weather metrics provided by NOAA National Data Buoy Center/ERDDAP,
+
+4.  Data summaries and visualizations to estimate the contribution of biotic, abiotic, and anthropogenic contributors to the ocean soundscape.
 
 # Results
 
@@ -27,8 +36,6 @@ Specific Deliverables: 1. Identify Needs. Conduct a literature review and a surv
 \[Literature Review to identify 'best practices'\]
 
 \[How to integrate soundscape metrics into FOSSA. Include links to functions on CRAN and tutorials\]
-
-\[How to merge soundscape metrics w/ acoustic events in PAMpal. Include links to functions on CRAN and tutorials\]
 
 ## Integrate Shiptracks into FOSSA
 
