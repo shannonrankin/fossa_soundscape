@@ -12,7 +12,7 @@ Taiki Sakai, Contractor with Ocean Associates for SWFSC, La Jolla, CA 92037\
 Anne Simonis, Contractor with Ocean Associates for SWFSC, La Jolla, CA 92037\
 Megan McKenna, National Marine Sanctuary Foundation, Pacific Grove, CA 93950\
 
-August 8, 2023
+November 1, 2023
 
 # Background
 
@@ -32,23 +32,23 @@ Expand FOSSA by integrating data representing various contributors to the marine
 
 1.  AIS ship tracks
 
-    Access to AIS ship track data is notoriously complicated and while there are several open source websites to access AIS data, developing an automated process to download appropriate data is difficult. Here we created a function that will identify the appropriate time and location (latitude/longitude) based on an existing user dataset and then download the appropriate AIS files from Marine Cadastre (https://marinecadastre.gov/). There are additional functions to subset AIS data to suit your regional needs (e.g. area sampled around the point), read AIS data into R, and match AIS data to an existing user dataset. These functions are part of the new PAMscapes R package (currently hosted on Github with intended publication to CRAN by the end of the calendar year 2024). A tutorial 'AISWorkflow' is provided on the PAMscapes Github repository (https://github.com/TaikiSan21/PAMscapes).
+    Access to AIS ship track data is notoriously complicated and while there are several open source websites to access AIS data, developing an automated process to download appropriate data is difficult. Here we created a function that will identify the appropriate time and location (latitude/longitude) based on an existing user dataset and then download the appropriate AIS files from Marine Cadastre (https://marinecadastre.gov/). There are additional functions to subset AIS data to suit your regional needs (e.g. area sampled around the point), read AIS data into R, and match AIS data to an existing user dataset. These functions are part of the new PAMscapes R package (https://cran.r-project.org/web/packages/PAMscapes). A tutorial 'AISWorkflow' is provided on the PAMscapes Github repository (https://github.com/TaikiSan21/PAMscapes).
 
 2.  Weather variables
 
-    Weather (wind, precipitation) can serve as significant contributors to the soundscape. The PAMpal function 'matchEnvData' pairs environmental data products from ERDDAP or HYCOM data servers; however, weather data are saved from models developed by the Global Forecasting System (https://rda.ucar.edu/datasets/ds084.1/). PAMscapes includes the 'matchGFS' function to access wind and precipitation variables from this server and match it to a user dataset.
+    Weather (wind, precipitation) can serve as significant contributors to the soundscape. The PAMpal function 'matchEnvData' pairs environmental data products from ERDDAP or HYCOM data servers; however, weather data are saved from models developed by the Global Forecasting System (https://rda.ucar.edu/datasets/ds084.1/). PAMscapes includes the 'matchGFS' function to access wind and precipitation variables from this server and match it to a user dataset. These functions are part of the new PAMscapes R package (https://cran.r-project.org/web/packages/PAMscapes).
 
 3.  Soundscape data products
 
     There are a number of software approaches to convert audio data into soundscape metrics, and each of these methods creates somewhat different output depending on the processing steps. Triton's Soundscape-Metric software was developed to support SanctSound Project by outputting standardized sound pressure level metrics from calibrated audio data (https://github.com/MarineBioAcousticsRC/Triton/tree/master/Remoras/Soundscape-Metrics). Other software used by the PAM community include MANTA (https://bitbucket.org/CLO-BRP/manta-wiki/wiki/MANTA%20Software) and PyPAM (https://github.com/lifewatch/pypam) both with standardized sound level output formats, including netCDF format.
 
-    We developed functions that can read in soundscape metrics saved as CSV files from both MANTA and Triton software. CSV outputs from other sources are also supported, provided that they meet minimal formatting requirements (full details available in the 'PAMscapesTutorial.rmd' provided on GitHub). Any time resolution is accepted. A tutorial 'PAMscapesTutorial' is provided on the PAMscapes Github repository (https://github.com/TaikiSan21/PAMscapes).
+    We developed functions that can read in soundscape metrics saved as CSV files from both MANTA and Triton software. CSV outputs from other sources are also supported, provided that they meet minimal formatting requirements (full details available in the 'PAMscapesTutorial.rmd' provided on GitHub). Any time resolution is accepted. These functions are part of the new PAMscapes R package (https://cran.r-project.org/web/packages/PAMscapes). A tutorial 'PAMscapesTutorial' is provided on the PAMscapes Github repository (https://github.com/TaikiSan21/PAMscapes).
 
 4.  Summary and Visualizations
 
-    Once data are merged, there are a number of common summaries and visualizations that can be easily applied to the data. The 'addAISSummary' function summarized the raw AIS data to inform the presence, speed, and distance of ships to any point in the user dataset. PAMscapes readily creates time series plots of user selected variables as either line or heat map plots. The PAMscapes Tutorial provides additional guidance to personalize these plots. Since PAMscapes readily merges data with acoustic detection data processed in PAMpal, this allows for plotting a time series of the Acoustic Scene (@fig-acousticScene).
+    Once data are merged, there are a number of common summaries and visualizations that can be easily applied to the data. The 'addAISSummary' function summarized the raw AIS data to inform the presence, speed, and distance of ships to any point in the user dataset. PAMscapes readily creates time series plots of user selected variables as either line or heat map plots. The PAMscapes Tutorial provides additional guidance to personalize these plots. Since PAMscapes readily merges data with acoustic detection data processed in PAMpal, this allows for plotting a time series of the Acoustic Scene (@fig-acousticScene). These functions are part of the new PAMscapes R package (https://cran.r-project.org/web/packages/PAMscapes).
 
-    ![Example of Acoustic Scene visualization created using PAMscapes using acoustic detection data provided by PAMpal.](figures/AcousticScene.jpeg){#fig-acousticScene width="515"}
+   ![Example of Acoustic Scene visualization created using PAMscapes using acoustic detection data provided by PAMpal.](figures/AcousticScene.jpeg){#fig-acousticScene fig-align="center" width="515"}
 
 5.  Crowd-Sourced Soundscape Bibliography
 
@@ -58,7 +58,7 @@ Expand FOSSA by integrating data representing various contributors to the marine
 
 The standardized framework provided by the Free and Open Source Software for Acoustics (FOSSA) allows for automation of merging soundscape data with data from other sources (user defined or open source). Many of the functions developed here can function independent of other FOSSA software (e.g., PAMpal); however, the easy assimilation of datasets with acoustic detection of marine mammals allows for automation of complex visualizations, such as the Acoustic Scene plot, with little effort or programming experience. Consideration of additional datasets and visualizations can be incorporated with little additional effort.
 
-Software is currently publicly available on Github and will be available on CRAN once the approval process has been completed.
+The PAMscapes R package is available on CRAN (https://cran.r-project.org/web/packages/PAMscapes) and a tutorial 'PAMscapesTutorial' is provided on the PAMscapes Github repository (https://github.com/TaikiSan21/PAMscapes).
 
 ## References
 
