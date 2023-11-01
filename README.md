@@ -5,7 +5,7 @@ This repository is related to the above titled project, funded by NOAA"s Ocean A
 
 Project development (tasks, digital conversations) will be archived on the projects page (https://github.com/users/shannonrankin/projects/2). Please assign tasks to others as needed. 
 
-Final Report can be found here as a pdf.
+Download the final report as a pdf by clicking on the link, below:
 
 
 [Rankin.etal_FOSSA.Soundscape.Report_OAP2023.pdf](https://github.com/shannonrankin/fossa_soundscape/files/13231870/Rankin.etal_FOSSA.Soundscape.Report_OAP2023.pdf)
